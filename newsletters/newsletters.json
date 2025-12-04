@@ -5,6 +5,7 @@
     "date": "2025-11-30",
     "month": "November",
     "year": 2025,
-    "content": "<p>This November was a wonderful month filled with family celebrations and togetherness!</p><h2>Thanksgiving at Carmen's</h2><p>We spent Thanksgiving at Carmen's this year, and it was such a special gathering. The food was amazing, the company was even better, and we made so many wonderful memories together.</p><h2>Birthday Celebrations</h2><p>We also celebrated Marion and Jacob's birthdays this month! It was so great to see everyone come together to celebrate these special occasions. Happy birthday to both of you!</p>"
+    "featuredImage": "images/november-2025-featured.jpg",
+    "content": "<p>This November was a wonderful month filled with family celebrations and togetherness!</p><h2>Thanksgiving at Carmen's</h2><p>We spent Thanksgiving at Carmen's this year, and it was such a special gathering. The food was amazing, the company was even better, and we made so many wonderful memories together.</p><img src=\"images/thanksgiving-2025.jpg\" alt=\"Thanksgiving at Carmen's\" /><p class=\"image-caption\">Our Thanksgiving celebration at Carmen's</p><h2>Birthday Celebrations</h2><p>We also celebrated Marion and Jacob's birthdays this month! It was so great to see everyone come together to celebrate these special occasions. Happy birthday to both of you!</p><ul><li>Marion's birthday celebration</li><li>Jacob's birthday party</li></ul>"
   }
 ]

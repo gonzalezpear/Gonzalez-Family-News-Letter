@@ -78,6 +78,67 @@
     .newsletter-content .content p {
       margin: 1rem 0;
     }
+    .newsletter-content .content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 1.5rem 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .newsletter-content .content .featured-image {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      margin: 0 0 2rem;
+    }
+    .newsletter-content .content ul,
+    .newsletter-content .content ol {
+      margin: 1rem 0;
+      padding-left: 2rem;
+    }
+    .newsletter-content .content li {
+      margin: 0.5rem 0;
+    }
+    .newsletter-content .content blockquote {
+      border-left: 4px solid #111827;
+      padding-left: 1.5rem;
+      margin: 1.5rem 0;
+      color: #555;
+      font-style: italic;
+    }
+    .newsletter-content .content code {
+      background: #f5f5f5;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.9em;
+    }
+    .newsletter-content .content pre {
+      background: #f5f5f5;
+      padding: 1rem;
+      border-radius: 6px;
+      overflow-x: auto;
+      margin: 1rem 0;
+    }
+    .newsletter-content .content pre code {
+      background: none;
+      padding: 0;
+    }
+    .newsletter-content .content a {
+      color: #111827;
+      text-decoration: underline;
+    }
+    .newsletter-content .content a:hover {
+      color: #1f2937;
+    }
+    .newsletter-content .content .image-caption {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: -1rem;
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
     .loading {
       text-align: center;
       padding: 3rem;
@@ -147,9 +208,14 @@
         
         // Render newsletter
         const contentDiv = document.getElementById('newsletter-content');
+        const featuredImage = newsletter.featuredImage 
+          ? `<img src="${newsletter.featuredImage}" alt="${newsletter.title}" class="featured-image" />`
+          : '';
+        
         contentDiv.innerHTML = `
           <h1>${newsletter.title}</h1>
           <div class="date">${formattedDate}</div>
+          ${featuredImage}
           <div class="content">${newsletter.content}</div>
         `;
         
